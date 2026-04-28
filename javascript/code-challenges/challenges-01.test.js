@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
@@ -7,6 +9,8 @@ Write a function named `addOne` that takes an array of numbers, and returns a ne
 
 Use `forEach` to loop over the input array and work with each value.  Push the new value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
+
+
 
 const addOne = (arr) => {
   const newArr = [];
@@ -120,7 +124,19 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+  const output = [];
+  arr.forEach(num => {
+    if (num % 15 === 0) {
+      output.push('Fizz Buzz');
+    } else if (num % 3 === 0) {
+      output.push('Fizz');
+    } else if (num % 5 === 0) {
+      output.push('Buzz');
+    } else {
+      output.push(num);
+    }
+  });
+  return output;
 };
 
 /* ------------------------------------------------------------------------------------------------
