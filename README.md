@@ -25,3 +25,4 @@ To run your tests
 ## 401 Code Challenge Table of Contents
 
 - [Class 01 - Reverse an Array](javascript/code-challenges/401/array-reverse/README.md)
+- [Class 02 - Insert and Shift an Array](javascript/code-challenges/401/array-insert-shift/README.md)
