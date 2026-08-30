@@ -26,3 +26,5 @@ To run your tests
 
 - [Class 01 - Reverse an Array](javascript/code-challenges/401/array-reverse/README.md)
 - [Class 02 - Insert and Shift an Array](javascript/code-challenges/401/array-insert-shift/README.md)
+- [Class 03 - Binary Search](javascript/code-challenges/401/array-binary-search/README.md)
+
