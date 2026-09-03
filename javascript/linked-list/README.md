@@ -220,3 +220,9 @@ Note that when you check your code into GitHub, all of your tests will automatic
 ## Whiteboard Process
 
 ![Linked List Whiteboard](./assets/linked-list-whiteboard.png)
+
+---
+
+## Link to Code
+
+[Linked List Implementation](./index.js)
