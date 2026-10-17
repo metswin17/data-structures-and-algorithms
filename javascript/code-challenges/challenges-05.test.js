@@ -23,9 +23,8 @@ const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningT
 };
 
 const getCourseKeys = (obj) => {
-  // Solution code here...
-};
-
+  return Object.keys(obj);
+}
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
 
@@ -35,8 +34,8 @@ Write a function named checkValues that takes in an object and a value and retur
 ------------------------------------------------------------------------------------------------ */
 
 const checkValues = (obj, value) => {
-  // Solution code here...
-};
+  return Object.values(obj).includes(value);
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -58,9 +57,12 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  // Solution code here...
+  let result = [];
+  for (let key in obj) {
+    result.push(`${key}: ${obj[key]}`);
+  }
+  return result;
 };
-
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -114,10 +116,13 @@ const characters = [
 
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
+
+  arr.forEach((character) => {
+    houses.push(character.house);
+  });
+
   return houses;
 };
-
 /*------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
@@ -131,8 +136,15 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
+  const person = arr.find((item) => item.name === character);
 
+  if (!person) {
+    return false;
+  }
+
+  return Object.values(person).some(
+    (value) => Array.isArray(value) && value.length > 0
+  );
 };
 
 /* ------------------------------------------------------------------------------------------------
