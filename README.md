@@ -28,3 +28,4 @@ To run your tests
 - [Class 02 - Insert and Shift an Array](javascript/code-challenges/401/array-insert-shift/README.md)
 - [Class 03 - Binary Search](javascript/code-challenges/401/array-binary-search/README.md)
 - [Class 08 - Zip Two Linked Lists](javascript/linked-list-zip/README.md)
+- [Class 10 - Stack and Queue](javascript/stack-and-queue/README.md)
